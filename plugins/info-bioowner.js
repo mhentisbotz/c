@@ -1,20 +1,20 @@
 let handler = async (m, { conn }) => {
 let ppown = await conn.profilePictureUrl(nomorown + '@s.whatsapp.net', 'image').catch(_ => hwaifu[1]) 
 let teksbio = `*───────[ BIODATA OWNER ]───────*
-*✉️ Nama* : Fachri
+*✉️ Nama* : Jaka
 *♂️ Gender* : Laki - laki
 *🕋 Agama* : Islam
-*⏰ Tanggal lahir* : 17.Okto.2k8
-*🎨 Umur* : 14
-*🧮 Kelas* : 2 smp
+*⏰ Tanggal lahir* : 20.Juni.2006
+*🎨 Umur* : 16
+*🧮 Kelas* : 1 Sma
 *🧩 Hobby* : Chatting, Recode script bbot
-*🗺️ Tinggal* : Pemalang, jawa tengah, Indonesia
+*🗺️ Tinggal* : Gresik, jawa timur, Indonesia
 
 *───────[ SOSIAL MEDIA ]───────*
-*📷 instagran* : @sfdesign_id
-*🇫  Facebook* : @Saeful Fachri
-*🏮 Chanel Youtube* : SF Design
-*🐈 Github:* Ipulpachri (FachriBot)
+*📷 instagran* : @nan_sakrn
+*🇫  Facebook* : @Jaka nation
+*🏮 Chanel Youtube* : I AM NITSU
+*🐈 Github:* JakaV1
 
 `
 conn.sendHydrated(m.chat, teksbio, wm, ppown, "https://wa.me/" + nomorown, "💬 ᴄʜᴀᴛs", null,null, [["ᴅᴏɴᴀsɪ", '.donasi'], [null, null],[null,null]], fkontak)
