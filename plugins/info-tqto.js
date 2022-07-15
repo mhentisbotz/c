@@ -54,6 +54,8 @@ https://github.com/Aiinne
 *▸ - - - —「 KANG RECODE 」— - - - ◂*
 *❉ Fachri:*
 https://github.com/Ipulpachri
+*❉ Jaka:*
+https://github.com/JakaV1
 *▸ - - - —「 SPESIAL HELPER  」— - - - ◂*
 *❉ Kannachan:*
 *❉ Johannes:*
