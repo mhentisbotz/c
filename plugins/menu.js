@@ -10,9 +10,8 @@ let str = `◆▬▬❴ *Hai kak ${conn.getName(m.sender)}* ❵▬▬◆
 ║➸ Sewa bot 10k manen
 ║➸ Hubungi nomor owner
 ║➸ No owner [Wa.me/6285785694474]
-║➸ Runtime: %uptime
-║➸ Date: %date
-║➸ Time: %time
+║➸ Satu lagi
+║➸ jan semangat, tetaplah putus asa
 ◆▬▬❴ *Mohon di mengerti* ❵▬▬◆`
 conn.sendHydrated(m.chat, str, wm, './media/ayang.jpg', 'https://Instagram.com/nan_sakrn', 'IG Owner', '085785694474', 'Nomor Owner', [
 ['Donasi', '/donasi'], ['Owner', '/owner'], ['List Menu', '/m']
