@@ -109,17 +109,17 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     body: 'KinanBOT-MD By Jaka',
     description: '', 
     mediaType: 2, 
-    thumbnail: await (await fetch('https://telegra.ph/file/a9a6907db67ca1a0c0877.jpg')).buffer(), 
+    thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(), 
     mediaUrl: `https://youtu.be/35w7z9QFLwY`
 }
 } })
-conn.sendFile(m.chat, './media/AUD-20220711-WA0077.mp3', 'AUD-20220711-WA0077.mp3', null, fkontak, true, {
+conn.sendFile(m.chat, './media/tante-tante.mp3', 'tante-tante.mp3', null, fkontak, true, {
 type: 'audioMessage', 
 ptt: true 
 })
     // conn.sendButton(m.chat, 
     //`*Hi, ${name} 👋*\n\n`, 
-  //  text.trim(), './media/marin.jpg', [
+  //  text.trim(), './media/marin.jpg', 
 // [`Speedtest`, `${_p}ping`],
 // [`Owner`, `${_p}owner`]
 //], m, {asLocation: true})
