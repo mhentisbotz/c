@@ -1,5 +1,6 @@
 //Make & Help By
 //Johannes & Papah-Chan
+//Fachri & Jaka
 import jimp from 'jimp'
 import fs from 'fs'
 import fetch from 'node-fetch'
@@ -10,9 +11,9 @@ let tags = {}
 const defaultMenu = {
   before: `\n❏ › Date: %date\n❏ › Time: %time\n❏ › Runtime: %uptime\n%readmore`,
   header: '*❏═┅═━–〈 %category*',
-  body: '┊々› %cmd %islimit %isPremium',
+  body: '┊⌬ › %cmd %islimit %isPremium',
   footer: '┗━═┅═━––––––๑\n',
-  after: '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n©KinanBOT-MD@^1.0.5',
+  after: '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n©FachriBot-MD@^1.0.5',
 }
 
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -98,28 +99,30 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     let fkon = { key: { fromMe: false, participant: `${m.sender.split`@`[0]}@s.whatsapp.net`, ...(m.chat ? { remoteJid: '16504228206@s.whatsapp.net' } : {}) }, message: { contactMessage: { displayName: `${name}`, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}}
+    let fla = 'https://telegra.ph/file/09ce41e6673af3383a91e.jpg'
+    let teks = 'Menu'
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-  await conn.reply(m.chat, '*Loading...*', ftroli)
+  await conn.reply(m.chat, '*Tunggu ya sayang.....*', ftroli)
     const pp = await conn.profilePictureUrl(conn.user.jid, 'image').catch(_ => './src/avatar_contact.png')
     // if (m.isGroup) return conn.sendButton(m.chat, text.trim(), conn.getName(conn.user.jid), pp, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
     //conn.sendHydrated(m.chat, text.trim(), conn.getName(conn.user.jid), await genProfile(conn, m), 'https://youtube.com/channel/UC0hs_I8N3JntK5vO6KogavQ', 'YouTube', null, null, [['Speedtest', _p + 'ping'], ['Owner', _p + 'owner']], m)
    // conn.sendMessage(m.chat, { video: { url: 'https://telegra.ph/file/c82d5c358495e8ef15916.mp4' }, gifPlayback: true, gifAttribution: ~~(Math.random() * 2), caption: text.trim(), footer: await conn.getName(conn.user.jid) , templateButtons: [{ quickReplyButton: { displayText: 'Speedtest', id: `${_p}ping` }}, { quickReplyButton: { displayText: 'Owner', id: `${_p}owner` }} ] })
-   await conn.sendButton(m.chat, `*${wish()}, ${name} 👋*`, text.trim(), ftextt, [['Donasi', _p + 'donasi'], ['Owner', _p + 'owner']], false, { quoted: ftroli, contextInfo: { externalAdReply: { showAdAttribution: true,
+   await conn.sendButton(m.chat, `*${wish()}, ${name} 👋*`, text.trim(), await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(), [['Donasi', _p + 'donasi'], ['Owner', _p + 'owner']], false, { quoted: ftroli, contextInfo: { externalAdReply: { showAdAttribution: true,
     title: wm2,  
-    body: 'KinanBOT-MD By Jaka',
+    body: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< 💗✨', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`,
     description: '', 
     mediaType: 2, 
-    thumbnail: await (await fetch('https://telegra.ph/file/84e3a088695da949fab36.jpg')).buffer(), 
-    mediaUrl: `https://youtu.be/35w7z9QFLwY`
+    thumbnail: await (await fetch('https://telegra.ph/file/23376c29dd5378fd73f9c.jpg')).buffer(), 
+    mediaUrl: `${pickRandom([`https://www.facebook.com/Inunime-107082474576049/`,`https://youtu.be/JWHV8lPTzPs`,`https://instagram.com/sfdesign_id`])}`,  
 }
 } })
 conn.sendFile(m.chat, './media/tante-tante.mp3', 'tante-tante.mp3', null, fkontak, true, {
 type: 'audioMessage', 
-ptt: true 
+ptt: true, contextInfo:{ externalAdReply: {title: 'Ingat kamu itu jomblo', body: `${pickRandom(['Canda Sayang:v', 'Canda sayang'])}`, sourceUrl: 'https://Instagram.com/nan_sakrn', thumbnail: await (await fetch('https://telegra.ph/file/23376c29dd5378fd73f9c.jpg')).buffer(),}} 
 })
     // conn.sendButton(m.chat, 
     //`*Hi, ${name} 👋*\n\n`, 
-  //  text.trim(), './media/marin.jpg', 
+  //  text.trim(), './media/marin.jpg', [
 // [`Speedtest`, `${_p}ping`],
 // [`Owner`, `${_p}owner`]
 //], m, {asLocation: true})
@@ -166,8 +169,36 @@ function wish() {
     wishloc = ('Selamat Malam Kak')
   }
   return wishloc
+    }
+ function pickRandom(list) {
+  return list[Math.floor(Math.random() * list.length)]
 }
-
+  function ingat() {
+  const lgs = moment.tz('Asia/Jakarta').format('HH')
+  res = "Selamat dinihari"
+  if (lgs >= 4) {
+    imp = 'Jangan Lupa Sholat Subuh Yah Kak 🌠'
+  }
+  if (lgs > 7) {
+    imp = 'Jangan Lupa Sholat Dhuha Kak 😙'
+  }
+  if (lgs > 7) {
+    imp = 'Jangan Lupa Istirahat Yah Kak 💭'
+  }
+  if (lgs >= 15) {
+    imp = 'Sudah ashar Jangan lupa loh 💕'
+  }
+  if (lgs >= 18) {
+    imp = 'Sudah Magrib Saatnya Sholat Magrib Yah Kak 🕌'
+  }
+  if (lgs >= 19) {
+    imp = 'Jangan Sering Bergadang Yah Kak 🌆'
+  }
+  if (lgs >= 21) {
+    imp = 'Sudah malam kak, waktunya bobo 💤'
+  }
+  return imp
+}
 async function genProfile(conn, m) {
   let font = await jimp.loadFont('./names.fnt'),
     mask = await jimp.read('https://i.imgur.com/552kzaW.png'),
@@ -187,4 +218,4 @@ async function genProfile(conn, m) {
     await welcome.print(font, 550, 500, 'Number:')
     await welcome.print(font, 650, 575, PhoneNumber('+' + m.sender.split('@')[0]).getNumber('international'))
     return await welcome.composite(avatar, 50, 170).getBufferAsync('image/png')
-}
+},
