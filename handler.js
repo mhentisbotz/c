@@ -855,7 +855,7 @@ export async function participantsUpdate({ id, participants, action }) {
                 .toAttachment()
                             
                         // this.sendFile(id, action === 'add' ? wel : lea, pp, 'pp.jpg', text, null, false, { mentions: [user] })
-                       await this.sendHydrated(id, text, wm, action === 'add' ? wel.toBuffer() : lea.toBuffer(), sgc, (action == 'add' ? ' Welcome 👋' : 'Sayonaraa 👋'), user.split`@`[0], 'USER NUMBER', [
+                       await this.sendHydrated(id, text, wm, action === 'add' ? wel.toBuffer() : lea.toBuffer(), sgc, (action == 'add' ? '.....      OKE,GW TAU TERNYATA ASYRAF ITU GANTENG😎\n\nWeb Me : https://is.gd/4ZPpIt' : 'Semoga Tenang🗿'), user.split`@`[0], 'USER NUMBER', [
       [null, null],
       [null, null]
     ], null, false, { mentions: [user] })
@@ -894,16 +894,16 @@ To turn off this feature, type
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: '*Lu siapa?, Cuma Ayang Fachri Yang Bisa*',
-        owner: '*Lu siapa?, Cuma Ayang Fachri Yang Bisa*!',
-        mods: '*Lu siapa?, Cuma Ayang Fachri Yang Bisa*!',
+        rowner: '*Lu siapa?, Cuma Ayang Assyraf Yang Bisa*',
+        owner: '*Lu siapa?, Cuma Ayang Asyraf Yang Bisa*!',
+        mods: '*Lu siapa?, Cuma Ayang Asyraf Yang Bisa*!',
         premium: '*Beli premium dulu lah, murah kok!*',
-        group: '*Bisa nya di Group kak!*',
-        private: '*Bisanya di Private Chat kak!*',
-        admin: '*Lu admin kah?, kalo bukan gk bisa cuy:v!*',
-        botAdmin: '*Gw bukan admin "-_ Jadiin admin dulu lah!*',
-        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Fachri.16*',
-        restrict: 'This feature is *disabled*!'
+        group: '*Bisa nya di Group Dek!*',
+        private: '*Bisanya di Private Chat Tolol!*',
+        admin: '*Hy Member Tolol, Lu Kan Sok Nguasai Gc Y**',
+        botAdmin: '*Gw Bkn Admin Tolol*',
+        unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Asyraf.16*',
+        restrict: 'Done, Fitur Sudah Di Disable'
     }[type]
     if (msg) return conn.reply(m.chat, msg, m, { contextInfo: { externalAdReply: {title: global.wm, body: '404 Access denied!', sourceUrl: sgc, thumbnail: fs.readFileSync('./thumbnail.jpg') }}})
 }
