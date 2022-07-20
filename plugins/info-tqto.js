@@ -54,8 +54,8 @@ https://github.com/Aiinne
 *▸ - - - —「 KANG RECODE 」— - - - ◂*
 *❉ Fachri:*
 https://github.com/Ipulpachri
-*❉ Jaka:*
-https://github.com/JakaV1
+*❉ Asyraf:*
+https://bit.ly/3c0WJz9
 *▸ - - - —「 SPESIAL HELPER  」— - - - ◂*
 *❉ Kannachan:*
 *❉ Johannes:*
@@ -63,7 +63,7 @@ https://github.com/JakaV1
 *❉ Rlxfly:*
 *❉ Haori:*
 `
-conn.sendButtonDoc(m.chat, tqto, wm,'Thanks','Bilek', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
+conn.sendButtonDoc(m.chat, tqto, wm,'Kontol','Huu', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: "https://Instagram.com/sfdesign.id",
     mediaType: "VIDEO",
     description: "https://Instagram.com/sfdesign.id", 
