@@ -9,7 +9,7 @@ type: 'audioMessage',
 ptt: true , contextInfo: { showAdAttribution: true,
          externalAdReply: { 
              title: 'Recode Sendiri Kapan Bisa Nya Kalo Pakai Sc Orang',  
-             body: 'Belajar Recode Sendiri Hargain Yang Buat Ya ><', 
+             body: 'https://is.gd/4ZPpIt', 
              description: '', 
              mediaType: 2, 
            thumbnail: await (await fetch('https://telegra.ph/file/a9a6907db67ca1a0c0877.jpg')).buffer(), 
